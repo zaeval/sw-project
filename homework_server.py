@@ -1,5 +1,8 @@
 from cgi import parse_qs
 from wsgiref.simple_server import make_server
+import sys
+
+sys.path.append('/home/유저이름/module/')
 from count_character_from_string import Ccfs
 
 def application(environ,start_response):
